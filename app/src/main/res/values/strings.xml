@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Infomatic Users</string>
+    <string name="enter_your_name">Nhập họ tên của bạn</string>
+    <string name="enter_your_address">Nhập địa chỉ của bạn</string>
+    <string name="add_user">Thêm người dùng</string>
+    <string name="update_information">Sửa thông tin</string>
+    <string name="enter_search_username">Nhập tên tìm kiếm</string>
+    <string name="enter_your_year">Nhập năm sinh của bạn</string>
+</resources>

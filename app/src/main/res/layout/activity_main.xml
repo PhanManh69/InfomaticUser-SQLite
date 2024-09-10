@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".view.MainActivity">
+
+    <AutoCompleteTextView
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:padding="16dp"
+        android:background="@drawable/bg_white_border_50"
+        android:hint="@string/enter_your_name"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textSize="16sp"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/editTextAddress"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:background="@drawable/bg_white_border_50"
+        android:hint="@string/enter_your_address"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textSize="16sp"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/editTextYear"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:background="@drawable/bg_white_border_50"
+        android:hint="@string/enter_your_year"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textSize="16sp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonAddUser"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_white_border_50"
+        android:focusable="true"
+        android:clickable="true"
+        android:text="@string/add_user"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        style="@style/TextAppearance.MaterialComponents.Body2"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/editTextSearch"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:drawableStart="@drawable/search"
+        android:drawablePadding="16dp"
+        android:padding="16dp"
+        android:background="@drawable/bg_white_border_50"
+        android:hint="@string/enter_search_username"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textSize="16sp"/>
+    
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listUsers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_white_border_10"/>
+
+</LinearLayout>
